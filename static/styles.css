@@ -1,0 +1,307 @@
+body {
+  background-image: url("assets/flightphoto.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#head img {
+  top: 0;
+  height: 110px;
+  margin-left: 67%;
+}
+#head{
+  display: flex;
+}
+.navbar #head{
+  max-height: 75px;
+  top: 2px;
+  margin-left: 25px;
+}
+.col-2 img{
+  width :45px;
+ 
+}
+.rowfor3 .card-body .options{
+  max-width: 78px;
+}
+.rowfor3{
+  display: flex;
+  justify-content: space-between;
+
+}
+#head .git img{
+  margin-top: 20px;
+  height: 65px;
+  margin-left:750px;
+}
+.container{
+  max-width: 50%;
+  margin-left: 12%;
+}
+
+.row .col-2{
+  align-items: center;
+  justify-content: center;
+}
+
+.col-5{
+  width: 50%;
+  float: left;
+}
+
+#button{
+  margin-left: 0%;
+  background: linear-gradient(to right,rgb(10, 125, 202),rgb(52, 137, 218));
+  -webkit-box-shadow: -1px 6px 30px 3px rgba(0,0,0,0.53); 
+  box-shadow: -1px 6px 30px 3px rgba(0,0,0,0.53);
+  color:#ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  min-width: 373px;
+  max-width: 373px;
+  min-height: 40px;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 13px;
+  margin-bottom: 8px;
+  border: none;
+  margin-top: 25px;
+}
+#button:hover{
+  background: linear-gradient(to right,rgb(4, 133, 219),rgb(107, 167, 223));
+
+}
+h5{
+  font-weight: 900;
+}
+button .no-background {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+.rowfor3 div:nth-child(2) {
+  margin-right: 12px;
+}
+h4{
+  color: rgb(245, 248, 247);
+  padding: 7px;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right,rgb(49, 49, 49),rgb(26, 24, 25));
+  webkit-box-shadow: -1px 6px 30px 3px rgba(0,0,0,0.53); 
+  box-shadow: -1px 6px 30px 3px rgba(0,0,0,0.63);
+   border-radius: 13px;
+   max-width: fit-content;
+   margin-left: 12.5%;
+   text-decoration: none;
+   min-width: none;
+}
+h4::before {
+  content: none;
+}
+h3{
+  width: fit-content;
+  background-color: rgb(127, 127, 219);
+  color: rgb(5, 99, 99);
+  font-weight: 700;
+  font-size: 45px;
+}
+.card{
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 16px;
+  background: linear-gradient(to right,rgb(58, 56, 56),rgb(48, 44, 46));
+  color: white;
+  -webkit-box-shadow: -1px 6px 30px 3px rgba(0,0,0,0.53); 
+   box-shadow: -1px 6px 30px 3px rgba(0,0,0,0.53);
+}.card-body{
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  
+}
+
+.card-body .options {
+  background-color: rgb(65, 66, 66);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: -1px 6px 20px 3px rgba(36, 34, 34, 0.53);
+  padding: 3px;
+  color: rgb(122, 124, 124);
+  max-width: fit-content;
+  font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+}
+
+
+
+.card-body input{
+  background-color: rgb(65, 66, 66);
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+  border-radius: 2px;
+  max-width: fit-content;
+  box-shadow: -1px 6px 20px 3px rgba(36, 34, 34, 0.53);
+  padding: 3px;
+  color: rgb(124, 126, 126);
+  appearance: none;
+
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ============================================================================================================================================================= */
+
+@media screen and (max-width: 768px) {
+  .container{
+    min-width: 100%;
+    margin-left: 2px;
+    font-size: 20px;
+  }
+#head img {
+  float: left;
+  max-height: 75px;
+  margin-left: 0;
+  padding-left: 0;
+}
+#head .git img{
+  height: 35px;
+  margin-left: 135px;
+  margin-top: 19px;
+}
+h4{
+  font-size: 25px;
+  margin-left: 15px;
+  min-width:80%;
+  text-decoration:none ;
+}
+  .card-body input {
+    width: 100%;
+  }
+  .card-body .option {
+    width: 100%;
+    max-width: 80px;
+  }
+  .arrow .places-row{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar #head a:hover {
+    color: #830540;
+  }
+  .navbar #head {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: #1d0220;
+    font-weight: 800;
+    font-size: 19px;
+  }
+
+.col-5{
+    width: 50%;
+    float: left;
+}
+.col-2 img{
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+}
+.col-2{
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.card-body select {
+  width: 100%;
+}
+.col-sm-4{
+  padding:8px;
+  max-width: 155px;
+  margin-top: 3px;
+}
+.rowfor3{
+  align-items: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+.navbar #head img {
+  top: 0px;
+  height: 100px;
+  margin-left: 2px;
+}
+.rowfor3 .col-sm-2:nth-child(2) .card {
+  min-width: 450px;
+  max-width: 450px;
+  margin-right: 2px;
+}
+.navbar #head{
+  max-height: 75px;
+  top: 0px;
+  margin-left: 0px;
+}
+#button{
+  font-size: 19px;
+  margin-top: 18px;
+  padding: 9px;
+  width: 30%;
+  min-width: 37%;
+  justify-content: center;
+  margin-left: 0px;
+  background: linear-gradient(to right,rgb(7, 125, 204),rgb(52, 137, 218));
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+ 
+}
+.card{
+  margin-top: 15px;
+}
+.rowfor3 .card-body .options{
+  min-width: fit-content;
+}
+}
+@media screen and (min-width: 1024px) {
+  .rowfor3 .col-sm-6{
+    margin-left: 55px;
+    max-width: 400px;
+    min-width: 400px;
+  }
+  .rowfor3 .col-sm-2{
+   min-width: 190px;
+   max-width: 190px;
+   padding-right: 3px;
+  }
+  .rowfor3 .col-sm-6 .options{
+    min-width: 223px;
+
+  }
+  .rowfor3 .col-sm-2 .options{
+    min-width: 130px;
+   }
+  .rowfor3 .col-sm-2:nth-child(2){
+    margin-left: 1px;
+    margin-right: 100px;
+    
+   }
+}

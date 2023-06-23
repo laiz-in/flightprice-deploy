@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static\assets\favicon-32x32.png">
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+        <div id="head" class="container-fluid">
+            <a href="/">
+                <img src="static\assets\logo.png" alt="Flight Icon">
+            </a>
+            <div class="git">
+            <a href="https://github.com/laiz-in/flightpriceWEBAPP">
+                <img src="static\assets\github-icon.png" alt="Flight Icon">
+            </a>
+            </div>
+        </div>
+    
+    
+
+    <br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+            <div class="row places-row ">
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">From</h5>
+                            <select class="options" name="Source" id="Source" required="required">
+                                <option value="Delhi">DEL (DELHI)</option>
+                                <option value="Mumbai">BOM (MUMBAI)</option>
+                                <option value="Bangalore">BLR (BANGLORE)</option>
+                                <option value="Hyderabad">HYD (HYDERABAD)</option>
+                                <option value="Kolkata">CCU (KOLKATA)</option>
+                                <option value="Chennai">MMA (CHENNAI)</option>
+                                <option value="Ahmedabad">AMD (AHAMMEDABAD)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <img src="static\assets\travel-icon.png" alt="travel Icon" class="mx-auto">
+                </div>
+                
+               <div class="col-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">To</h5>
+                            <!-- Destination -->
+                            <select class="options" name="Destination" id="Destination" required="required">
+                                <option value="Mumbai">BOM (MUMBAI)</option>
+                                <option value="Bangalore">BLR (BANGLORE)</option>
+                                <option value="Hyderabad">HYD (HYDERABAD)</option>
+                                <option value="Kolkata">CCU (KOLKATA)</option>
+                                <option value="Chennai">MMA (CHENNAI)</option>
+                                <option value="Ahmedabad">AMD (AHAMMEDABAD)</option>
+                                <option value="Delhi">DEL (DELHI)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Departure Date</h5>
+                            <!-- Departure -->
+                            <input class="options" type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <img src="static\assets\calendar-icon.svg" alt="travel Icon" class="mx-auto">
+                </div>
+                <div class="col-5 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Duration hours</h5>
+                            <!-- Departure -->
+                            <input type="number" step="any" max="20" name="Duration">
+                        </div>
+                    </div>
+                </div>
+                <br>
+              
+            </div>
+
+
+            <br>
+            <br>
+
+            <div class="row rowfor3">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stopage</h5>
+                            <!-- Total Stops -->
+                            <select class="options" name="stops" required="required">
+                                <option value="non-stop">non-stop</option>
+                                <option value="1-stop">single stop</option>
+                                <option value="2+-stop">Multi stops</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Class</h5>
+                            <!-- Total Stops -->
+                            <select class="options" name="Classes" required="required">
+                                <option value="Economy">Economy</option>
+                                <option value="Premium Economy">Premium Economy</option>
+                                <option value="Business">Business</option>
+                                <option value="First">First</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Airline</h5>
+                            <!-- Airline -->
+                            <select class="options" name="Airline" id="Airline" required="required">
+                                <option value="SpiceJet">SpiceJet</option>
+                                <option value="Indigo">IndiGo</option>
+                                <option value="GO FIRST">Go first</option>
+                                <option value="Air India">Air India</option>
+                                <option value="AirAsia">AirAsia</option>
+                                <option value="Vistara">Vistara</option>
+                                <option value="AkasaAir">Akasa Air</option>
+                                <option value="AllianceAir">AllianceAir</option>
+                                <option value="StarAir">StarAir </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input id="button" type="submit" value="Check the price" class="btn btn-secondary">
+            <br>
+            <!-- Submit -->
+        </form>
+
+
+    </div>
+    {% if prediction_text %}
+    <h4 class="{{ 'no-background' if prediction_text.startswith('.') else '' }}">
+        {{ prediction_text.lstrip('.') }}
+    </h4>
+    {% endif %}
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
