@@ -1,5 +1,5 @@
 body {
-  background-image: url("assets/flightphoto.jpg");
+  background: linear-gradient(to right , rgb(155, 150, 150),rgb(94, 91, 91));
   background-size: cover;
   background-position: center;
 }
