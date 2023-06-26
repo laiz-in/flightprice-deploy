@@ -90,7 +90,6 @@ def predict():
             data_Scaled = preprocessor.transform(dataframe)
             prediction =model.predict(data_Scaled)
             result = abs(int(prediction[0]))
-            result=f" at prediction {e} and {data_Scaled}"
         except:
             pass
         results = f"Approximate fare: INR {result}"
